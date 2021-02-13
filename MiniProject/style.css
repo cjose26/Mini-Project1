@@ -1,4 +1,4 @@
-
+/* the body of the webpage */
 body {
     background-color: black;
     color: purple;
@@ -7,6 +7,7 @@ body {
     
 }
 
+/*flexbox for the grid view */
 .grid {
     width: 100%;
     display: flex;
@@ -18,6 +19,8 @@ body {
     flex: 1 1 30%;
 }
 
+
+/* title and subtitle */
 h1,
 .subtitle {
     text-align: center;
@@ -27,6 +30,7 @@ h1,
     color: white;
 }
 
+/* the individual boxes that makes up the grid */
 .box {
     border: 1px dashed white;
     margin: 10px;
@@ -35,6 +39,7 @@ h1,
 
 }
 
+/* the title for each box */
 h2 {
     border: 1px solid white;
     border-radius: 5px;
@@ -44,10 +49,13 @@ h2 {
     background-color: black;
 }
 
+/* the section of code within each box */
 .code {
     background-color: purple;
     color: white;
 }
+
+/* the sentence within each box above the code */
 p {
     padding-top: 0;
     
