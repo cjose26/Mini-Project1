@@ -16,97 +16,106 @@
             </p>
         </header>
 
-        <!-- main section with the boxes. 6 "box" classes inside of one big "grid" class to contain the boxes. -->
+        <!-- main section with the boxes. 6 "box" classes inside of one big main element with the id "grid" to contain the boxes. -->
         <!-- I am sure there is a better way to structure the code without using so many '<br>' tags but im not sure how -->
-        <main class="grid">
-            <div class="box">
-                <h2>Flexbox Row</h2>
-                    <p>Use these three properties to create a Flexbox row layout.</p>
+        
+            <main id="grid">
+                <div class="box">
+                    <h2 class="title">Flexbox Row</h2>
+                        <p>Use these three properties to create a Flexbox row layout.</p>
+    
+                        <p class="code">
+                            .row {<br>
+                                display: flex;<br>
+                                flex-direction: row;<br>
+                                flex-wrap: wrap;
+                            }
+                        </p>
+                </div>
+    
+                <div class="box">
+                    <h2 class="title">Flexbox Column</h2>
+                        <p>Use this to create a Flexbox column layout.</p>
+    
+                        <p class="code">
+                            .column {<br>
+                                display: flex;<br>
+                                flex-direction: column;<br>
+                            }
+                        </p>
+                </div>
+    
+                
+                <div class="box">
+                    <h2 class="title">CSS Grid Layout</h2>
+                        <p>Build a 12-column layout using CSS Grid</p>
+    
+                        <p class="code">
+                            .grid {<br>
+                                display: grid;<br>
+                                width: 100%;<br>
+                                grid-template-columns: repeat(12, 1fr):
+                            }
+                        </p>
+                </div>
+    
+                
+                <div class="box">
+                    <h2 class="title">Linear Gradients</h2>
+                        <p>This will create a background linear gradient from top to bottom.</p>
+    
+                        <p class="code">
+                            .linear-gradient-background {<br>
+                                background-image: linear-gradient (<br>
+                                    rgba(232, 102, 236, 0.3) 0%,<br>
+                                    rgba(232, 102, 236, 0.6) 100%
+                                );
+                            }
+                        </p>
+                </div>
+    
+                
+                <div class="box">
+                    <h2 class="title">Box Transition Glow</h2>
+                        <p>Use transition and box shadows to glow on hover.</p>
+    
+                        <p class="code">
+                            .code-card .card-header {<br>
+                                border-radius: 8px;<br>
+                                transition: all 0.5s ease-in-out;
+                            }
+                            <br>
+                            <br>
+                            .code-card:hover,<br>
+                            .code-card:hover .card-header {<br>
+                                box-shadow: inset 0px 0px 8px<br>
+                                rgba(232, 102, 236, 1). 0 0 15px<br>
+                                rgba(232,102, 236, 1);
+                            }
+                        </p>
+                </div>
+    
+                
+                <div class="box">
+                    <h2 class="title">Overlay Card with Title</h2>
+                        <p>Use position properties and negative margins to raise elements higer than their natural starting point.</p>
+    
+                        <p class="code">
+                            .card header {<br>
+                                position: relative;<br>
+                                margin-top: -20px;
+                            }
+                        </p>
+                </div>           
+            </main>
+        
+        
 
-                    <p class="code">
-                        .row {<br>
-                            display: flex;<br>
-                            flex-direction: row;<br>
-                            flex-wrap: wrap;
-                        }
-                    </p>
-            </div>
+        <!-- the footer -->
+        <footer>
+            <h2>Made with <span>&hearts;</span> and CSS</h2>
+        </footer>
 
-            <div class="box">
-                <h2>Flexbox Column</h2>
-                    <p>Use this to create a Flexbox column layout.</p>
-
-                    <p class="code">
-                        .column {<br>
-                            display: flex;<br>
-                            flex-direction: column;<br>
-                        }
-                    </p>
-            </div>
-
-            
-            <div class="box">
-                <h2>CSS Grid Layout</h2>
-                    <p>Build a 12-column layout using CSS Grid</p>
-
-                    <p class="code">
-                        .grid {<br>
-                            display: grid;<br>
-                            width: 100%;<br>
-                            grid-template-columns: repeat(12, 1fr):
-                        }
-                    </p>
-            </div>
-
-            
-            <div class="box">
-                <h2>Linear Gradients</h2>
-                    <p>This will create a background linear gradient from top to bottom.</p>
-
-                    <p class="code">
-                        .linear-gradient-background {<br>
-                            background-image: linear-gradient (<br>
-                                rgba(232, 102, 236, 0.3) 0%,<br>
-                                rgba(232, 102, 236, 0.6) 100%
-                            );
-                        }
-                    </p>
-            </div>
-
-            
-            <div class="box">
-                <h2>Box Transition Glow</h2>
-                    <p>Use transition and box shadows to glow on hover.</p>
-
-                    <p class="code">
-                        .code-card .card-header {<br>
-                            border-radius: 8px;<br>
-                            transition: all 0.5s ease-in-out;
-                        }
-                        <br>
-                        <br>
-                        .code-card:hover,<br>
-                        .code-card:hover .card-header {<br>
-                            box-shadow: inset 0px 0px 8px<br>
-                            rgba(232, 102, 236, 1). 0 0 15px<br>
-                            rgba(232,102, 236, 1);
-                        }
-                    </p>
-            </div>
-
-            
-            <div class="box">
-                <h2>Overlay Card with Title</h2>
-                    <p>Use position properties and negative margins to raise elements higer than their natural starting point.</p>
-
-                    <p class="code">
-                        .card header {<br>
-                            position: relative;<br>
-                            margin-top: -20px;
-                        }
-                    </p>
-            </div>           
-        </main>
     </body>
 
 </html>

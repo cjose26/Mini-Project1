@@ -8,14 +8,14 @@ body {
 }
 
 /*flexbox for the grid view */
-.grid {
-    width: 100%;
+#grid {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    margin: 0 auto;
 }
 
-.grid >.box {
+#grid >.box {
     flex: 1 1 30%;
 }
 
@@ -28,19 +28,18 @@ h1,
 
 .subtitle {
     color: white;
+    padding: 10px 50px;
 }
 
 /* the individual boxes that makes up the grid */
 .box {
     border: 1px dashed white;
     margin: 10px;
-    padding: 5px;
-    
-
+   
 }
 
 /* the title for each box */
-h2 {
+.title {
     border: 1px solid white;
     border-radius: 5px;
     position: relative;
@@ -53,10 +52,21 @@ h2 {
 .code {
     background-color: purple;
     color: white;
+    ;
 }
 
 /* the sentence within each box above the code */
 p {
     padding-top: 0;
     
+}
+/* footer */
+
+footer {
+  text-align: center
+}
+
+/* span around the heart markup to change the color to rep\ */
+span {
+    color: red;
 }
